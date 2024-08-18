@@ -340,6 +340,10 @@ align-items: center;
     border: 2px solid #E21E26; 
     text-align: center; /
 }
+.input-btn
+{
+    display: none;
+}
 .input-btn button:hover {
     background-color: #E21E26;
     color:#F8F8F8 ;
@@ -1122,5 +1126,8 @@ text-align: center;
         margin-bottom: 0;
         margin-right: 0;
     }
-  
+    .input-btn
+    {
+        display: block;
+    }
 }
