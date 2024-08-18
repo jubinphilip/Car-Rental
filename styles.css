@@ -320,14 +320,13 @@ align-items: center;
 {
     margin-left: 4vw;
     margin-top: 2vh;
-    width: 90%;
     display: flex;
-    gap: 2vw;
     justify-content: space-between;
+    width: 90%;
 }
 .input-btn button
 {
-    flex: 1; 
+    width: 48%;
     background-color: white; 
     color: red; 
     border: none; 
@@ -338,7 +337,7 @@ align-items: center;
     font-weight: 600; 
     line-height: 19.5px;
     border: 2px solid #E21E26; 
-    text-align: center; /
+    text-align: center; 
 }
 .input-btn
 {
