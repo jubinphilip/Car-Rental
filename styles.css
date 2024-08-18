@@ -267,10 +267,15 @@ align-items: center;
     padding-top: 3vw;
     padding-right: 3vw;
 }
-.mob-txt,.mob-logo
+.mob-logo
 {
-    width: 10vw;
-    height: 5vh;
+    width:100px;
+    height: 50px;
+}
+.mob-txt
+{
+    width:200px;
+    height: 80px;
 }
 .menu-close
 {
@@ -303,12 +308,41 @@ align-items: center;
 {
     border: none;
 }
+
 .inputs
 {
     display: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.input-btn
+{
+    margin-left: 4vw;
+    margin-top: 2vh;
+    width: 90%;
+    display: flex;
+    gap: 2vw;
+    justify-content: space-between;
+}
+.input-btn button
+{
+    flex: 1; 
+    background-color: white; 
+    color: red; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 13px; 
+    font-weight: 600; 
+    line-height: 19.5px;
+    border: 2px solid #E21E26; 
+    text-align: center; /
+}
+.input-btn button:hover {
+    background-color: #E21E26;
+    color:#F8F8F8 ;
 }
 .inputs input
 {
@@ -327,10 +361,12 @@ align-items: center;
     align-items: center;
     justify-content: center;
 }
+
 .mobile-inputs
 {
     display: none;
 }
+
 .poster {
     background-image: url(assets/2018-Mitsubishi-ASX-1920x966\ 1.svg);
     width: 92%;
@@ -843,18 +879,22 @@ margin-bottom: 1 rem;
     content: url('assets/xmark.svg'); 
 }
 footer{
-height: 303px;
+    width: 100%;
 background-color: #000000;
 padding-top: 40px;
-padding-left: 80px;
 }
 .footer-items
 {
     display: flex;
     margin-left: 50px;
 }
+.footer-container
+{
+    display: flex;
+    justify-content: space-between;
+}
 .footer-items ul li{
-font-size: 13px;
+font-size: 1rem;
 font-weight: 500;
 line-height: 19.5px;
 text-align: left;
@@ -866,19 +906,15 @@ line-height: 19.5px;
 text-align: left;
 
 }
-.footer-container
-{
-    display: flex;
-    justify-content: space-between;
-}
 .footer-logo
 {
-    width: 56.75px;
-height: 66px;
+    margin-left: 50px;
+    width: 3.5rem;
+height: 4 rem;
 }
 .logo-text
 {
-    width: 105px;
+    width: 130px;
 height: 36px;
 font-size: 12px;
 font-weight: 500;
@@ -896,8 +932,7 @@ margin-top: 9;
 {
     display: flex;
     flex-direction: column;
-height: 21px;
-margin-right: 103px;
+margin-right: 6vw;
 font-size: 14px;
 font-weight: 600;
 line-height: 21px;
@@ -905,22 +940,18 @@ text-align: left;
 color:  #FFFFFF;
 }
 .social-medias {
-gap: 14px;
+gap: 1vw;
 display: flex;
 margin-top: 10px;
-margin-bottom: 32px;
+margin-bottom: 2rem;
 }
-.sign
-{
-    width: 64px;
-height: 24px;
 
+.companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
-.companies
-{
-    margin-left: 433.5px;
-    margin-top: 19px;
-}
+
 .companies p
 {
     color: #FFFFFF;
@@ -930,8 +961,7 @@ height: 24px;
 .companies ul 
 {
     display: flex;
-height: 24px;
-gap: 21px;
+gap: 2vw;
 color: #FFFFFF;
 }
 .companies ul li{
@@ -941,6 +971,7 @@ font-weight: 500;
 line-height: 56.74px;
 letter-spacing: -0.035em;
 text-align: left;
+color:  #FFFFFF;;
 }
 .footer-line
 {
@@ -956,10 +987,68 @@ margin-top: 1.5rem;
 font-size: 12px;
 font-weight: 500;
 line-height: 18px;
-text-align: left;
 color: #FFFFFF;
-margin-left: 38%;
+text-align: center;
 }
+.footer-2
+{
+    display: none;
+}
+.footer-nav{
+    background-color: #F6F7F9;
+    margin: 0;
+}
+.footer-companies p,.footer-companies ul li{
+    color: #FFFFFF;
+}
+.footer-logo-social
+{
+    padding-top: 2rem;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.mob-social-medias
+{
+    display: flex;
+    gap: 3vw;
+    width: 20px;
+    height: 20px;
+}
+.footer-nav-items {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 12vh; 
+    flex-direction: column; 
+}
+
+.footer-nav-items ul {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    gap: 3vw;
+    margin: 10px 0; 
+}
+.footer-companies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; 
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.footer-companies ul {
+    display: flex;
+    justify-content: center;
+    padding: 0; 
+    gap: 3vw;
+    margin: 10px 0; 
+}
+
+
 @media (max-width: 1024px)
 {
     .header-icons,.navbar-items
@@ -975,6 +1064,11 @@ margin-left: 38%;
     {
         display: none;
     }
+    .header
+    {
+        width: 97%;
+        display: flex;
+    }
     .headertext
     {
         display: flex;
@@ -984,7 +1078,7 @@ margin-left: 38%;
     }
     .mobile-inputs
     {
-        display: block;
+    
         width: 90%;
     }
     .car1,.car2{
@@ -1009,10 +1103,23 @@ margin-left: 38%;
     {
         display: block;
     }
-    .location-section,.faq-section
+    .location-section
     {
         margin-left: 0;
-        width: 100%;
+        width: 95%;
         padding-left: 5vw;
+    }
+    footer{
+        padding-top: 0;
+    }
+    .footer-1
+    {
+        display: none;
+    }
+    .footer-2
+    {
+        display: block;
+        margin-bottom: 0;
+        margin-right: 0;
     }
 }
