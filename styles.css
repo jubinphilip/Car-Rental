@@ -84,11 +84,14 @@ font-weight: 400;
 line-height: 56.74px;
 letter-spacing: -0.035em;
 }
+
+/*The header Part that is the red Poster on top*/
 .header{
     width: 100%;
     display: flex;
     
 }
+
 .main-header
 {
     background-image: url(assets/Group.svg);
@@ -381,7 +384,7 @@ align-items: center;
 {
     display: none;
 }
-
+/*Main Poster*/
 .poster {
     background-image: url(assets/2018-Mitsubishi-ASX-1920x966\ 1.svg);
     width: 92%;
@@ -435,7 +438,11 @@ text-align: left;
 padding: 5.4px 19px;
 color:  #FFFFFF;
 }
-
+.poster-mob
+{
+    display: none;/*Hiding Poster for mobile at desktop view*/
+}
+/*Popular cars Part*/
 .popular-car
 {
     display: flex;
@@ -511,10 +518,9 @@ margin-left: 41px;
     gap: 4px;
 
 }
-.poster-mob
-{
-    display: none;
-}
+
+
+
 .car-details-icons label{
     width: 57px;
     height: 17px;

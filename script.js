@@ -13,7 +13,7 @@ close.addEventListener('click',function()
     popup.style.display="none";
 })
 
-
+//Code For showing the input boxes while in Button Click
 document.getElementById('nav-1').addEventListener('click', function() {
     showInputs('inputs1');
 });
@@ -35,7 +35,7 @@ function showInputs(id) {
     // Show the selected input section
     document.getElementById(id).style.display = 'block';
 }
-
+//Showing Answer while Clicking the Question
 const faqs=document.querySelectorAll(".question-answers");
 console.log(faqs)
 faqs.forEach(faq=>{
