@@ -26,6 +26,8 @@ bookCar.addEventListener('click',function()
     mobIn.style.display="block"
 })
 
+//Hiding inputs for mobile at larger screen
+
 function showInputs(id) {
     // Hide all input sections
     document.querySelectorAll('.inputs').forEach(function(inputSection) {

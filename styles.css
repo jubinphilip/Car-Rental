@@ -380,10 +380,6 @@ align-items: center;
     justify-content: center;
 }
 
-.mobile-inputs
-{
-    display: none;
-}
 /*Main Poster*/
 .poster {
     background-image: url(assets/2018-Mitsubishi-ASX-1920x966\ 1.svg);
