@@ -380,6 +380,10 @@ align-items: center;
     justify-content: center;
 }
 
+.mobile-inputs
+{
+    display: none;
+}
 /*Main Poster*/
 .poster {
     background-image: url(assets/2018-Mitsubishi-ASX-1920x966\ 1.svg);
@@ -436,7 +440,7 @@ color:  #FFFFFF;
 }
 .poster-mob
 {
-    display: none;/*Hiding Poster for mobile at desktop view*/
+    display: none;/*Hiding Poster for mobile at pc view*/
 }
 /*Popular cars Part*/
 .popular-car
