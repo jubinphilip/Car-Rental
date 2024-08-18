@@ -187,7 +187,7 @@ letter-spacing: -0.035em;
 .headertext
 {
     display: flex;
-    margin-left: 4rem;
+    margin-left: 4%;
     margin-top: 2rem;
     align-items: center;
     margin-bottom: 3vh;
@@ -1122,4 +1122,5 @@ text-align: center;
         margin-bottom: 0;
         margin-right: 0;
     }
+  
 }
