@@ -87,13 +87,25 @@
         </div>
         <div class="main-input-container">
             <div class="header-inputs">
+                <div style="background-color: white; border-radius: 20px;padding: 1px;">
+                    <img src="assets/loc.svg" alt="">
                 <select class="header-input" name="place" id="">
                     
                     <option value="AL Quoz">Al Quoz</option>
                     <option value="Dubai">Dubai</option>
                 </select>
-                <input class="header-input" type="datetime-local">
-                <input class="header-input" type="datetime-local">
+            </div>
+                <div class="input-wrapper">
+                    <img class="cal-icon" src="assets/cal.svg" alt="Calendar Icon">
+                  
+                    <input class="header-input" type="datetime-local" placeholder="Pick-Up Date and Time">
+                   
+                </div>
+                <div class="input-wrapper">
+                    <img class="cal-icon" src="assets/cal.svg" alt="Calendar Icon">
+                    <input class="header-input" type="datetime-local" placeholder="Drop-Off Date and Time">
+                   
+                </div>
             </div>
             <img class="search" src="assets/search.svg" alt="">
             <div class="header-input-name"><p>Quick Book</p></div>
@@ -130,21 +142,28 @@
     </div>
 
     <div class="inputs" id="inputs1" style="display: none;">
-        <input type="text" placeholder="Pick-Up Location">
-        <input type="datetime-local" placeholder="Pick-Up Date and Time">
-        <input type="datetime-local" placeholder="Drop-Off Date and Time">
+        <input class="loc-ico" type="text" placeholder="Pick-Up Location">
+        <input class="date-ico" type="datetime-local" >
+        <input class="date-ico" type="datetime-local" >
     </div>
     
     <div class="inputs" id="inputs2" >
-        <input type="text" placeholder="Pick-Up Location">
-        <input type="text" placeholder="Drop-Off Location">
-        <input type="datetime-local" placeholder="Pick-Up Date and Time">
-        <input type="datetime-local" placeholder="Drop-Off Date and Time">
+        <input class="loc-ico" type="text" placeholder="Pick-Up Location">
+        <input class="loc-ico" type="text" placeholder="Drop-Off Location">
+        <input class="date-ico" type="datetime-local" >
+        <input class="date-ico" type="datetime-local" >
     </div>
    </div>
 
    <div class="poster">
     <div class="poster-txt">
+        <p>Recieve guarnteed <button>GIFT VOUCHER</button><br>on a monthly hire or lease
+        </p>
+    </div>
+</div>
+
+<div class="poster-mob">
+    <div class="poster-txt-mob">
         <p>Recieve guarnteed <button>GIFT VOUCHER</button><br>on a monthly hire or lease
         </p>
     </div>
@@ -266,7 +285,7 @@
             <h4>01</h4>
         </div>
         <div class="rent-card-body">
-            <img src="assets/loc.svg" alt="">
+            <img src="assets/loc1.svg" alt="">
             <p>Select the location. Browse through our available options and find the perfect car to suit your needs</p>
         </div>
         </div>
