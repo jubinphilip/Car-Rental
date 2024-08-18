@@ -1027,6 +1027,7 @@ text-align: center;
 .footer-nav{
     background-color: #F6F7F9;
     margin: 0;
+    
 }
 .footer-companies p,.footer-companies ul li{
     color: #FFFFFF;
@@ -1049,8 +1050,8 @@ text-align: center;
     display: flex;
     justify-content: center; 
     align-items: center;
-    height: 12vh; 
-    flex-direction: column; 
+    height: 13vh; 
+    flex-direction: column;
 }
 
 .footer-nav-items ul {
