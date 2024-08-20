@@ -443,6 +443,10 @@ color:  #FFFFFF;
     display: none;/*Hiding Poster for mobile at pc view*/
 }
 /*Popular cars Part*/
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
 .popular-car
 {
     display: flex;
