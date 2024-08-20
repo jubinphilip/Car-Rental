@@ -21,10 +21,18 @@ document.getElementById('nav-1').addEventListener('click', function() {
 document.getElementById('nav-2').addEventListener('click', function() {
     showInputs('inputs2');
 });
-bookCar.addEventListener('click',function()
-{
-    mobIn.style.display="block"
-})
+// Add event listener to the bookCar element
+bookCar.addEventListener('click', function() {
+    // Check the current display property of mobIn
+    if (mobIn.style.display === 'none' || mobIn.style.display === '') {
+        // If it's 'none' or an empty string, set it to 'block'
+        mobIn.style.display = 'block';
+    } else {
+        // Otherwise, set it to 'none'
+        mobIn.style.display = 'none';
+    }
+});
+
 
 //Hiding inputs for mobile at larger screen
 
