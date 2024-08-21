@@ -3,6 +3,68 @@ const popup=document.querySelector(".popup-window")
 const close=document.querySelector(".menu-close")
 const bookCar=document.querySelector("#book-car")
 const mobIn=document.querySelector(".mobile-inputs")
+
+function validateEmail(email) {
+    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return emailRegex.test(email);
+}
+
+function validatePhoneNumber(phoneNumber) {
+    const phoneRegex = /^\+?(\d{1,3})?[-.\s]?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})$/;
+    return phoneRegex.test(phoneNumber);
+}
+
+function validateName(name) {
+    const nameRegex = /^[a-zA-Z\s]{2,50}$/;
+    return nameRegex.test(name);
+}
+function validateForm() {
+
+    const userName=document.getElementById('username')
+const userMail=document.getElementById('usermail')
+
+console.log(userName,userMail)
+    document.getElementById('subForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    })
+    console.log("Validating...");
+
+    const name = userName.value.trim();
+    const email = userMail.value.trim();
+  
+
+    let isValid = true;
+
+    if (!validateName(name)) {
+      alert("Invalid name");
+        isValid = false;
+        
+    }
+
+    if (!validateEmail(email)) {
+      alert("Invalid email");
+        isValid = false;
+        
+    }
+    if (isValid) {
+        console.log("Form is valid!");
+    } else {
+        console.log("Form validation failed.");
+    }
+
+    return isValid; 
+}
+function validateForm2()
+{
+    document.getElementById('subForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+    })
+    const userNum=document.getElementById('usernum')
+    const phoneNumber = userNum.value.trim();
+    if (!validatePhoneNumber(phoneNumber)) {
+        alert("Invalid Phone")
+    }
+}
 console.log(bookCar,mobIn)
 menu.addEventListener('click',function()
 {

@@ -229,11 +229,11 @@
         <h4 class="sub">
             Subscribe here for exclusive offers and updates!
         </h4>
-        <form class="subform">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email"><br>
+        <form class="subform" id="subForm">
+            <input type="text" id="username" placeholder="Name"  required>
+            <input type="email" id="usermail" placeholder="Email" required><br>
             <span>Don't miss out! enter your email and your name, then hit subscribe to unlock a world of special offers and details</span><br>
-            <button>Subscribe</button>
+            <button onclick="validateForm()">Subscribe</button>
         </form>
     </div>
     <div class="sub-part2">
@@ -241,8 +241,8 @@
         <div class="app-link">
             <span>Enter your number and receive 
                 a direct link to download the app<br></span>
-                <input type="text" placeholder="Enter Phone Number">
-                <button>Get the Link</button>
+                <input type="text" id="usernum" placeholder="Enter Phone Number" required>
+                <button onclick="validateForm2()">Get the Link</button>
                 <div class="dwnld-app">
                     <span>Get it on</span><br>
                     <img src="assets/app2.svg" alt="">
