@@ -6,7 +6,7 @@ const mobIn=document.querySelector(".mobile-inputs")
 
 const emailSpan=document.querySelector('#emailSpan')
 const numSpan=document.querySelector('#numSpan')
-
+//Validting the froms inside the code
 function validateEmail(email) {
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return emailRegex.test(email);
