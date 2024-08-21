@@ -4,6 +4,9 @@ const close=document.querySelector(".menu-close")
 const bookCar=document.querySelector("#book-car")
 const mobIn=document.querySelector(".mobile-inputs")
 
+const emailSpan=document.querySelector('#emailSpan')
+const numSpan=document.querySelector('#numSpan')
+
 function validateEmail(email) {
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return emailRegex.test(email);
@@ -36,13 +39,13 @@ console.log(userName,userMail)
     let isValid = true;
 
     if (!validateName(name)) {
-      alert("Invalid name");
+      emailSpan.innerHTML="Invalid name";
         isValid = false;
         
     }
 
     if (!validateEmail(email)) {
-      alert("Invalid email");
+      emailSpan.innerHTML="Invalid email";
         isValid = false;
         
     }
@@ -62,7 +65,7 @@ function validateForm2()
     const userNum=document.getElementById('usernum')
     const phoneNumber = userNum.value.trim();
     if (!validatePhoneNumber(phoneNumber)) {
-        alert("Invalid Phone")
+        numSpan.innerHTML="Invalid Phone"
     }
 }
 console.log(bookCar,mobIn)
