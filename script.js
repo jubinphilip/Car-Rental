@@ -50,7 +50,7 @@ console.log(userName,userMail)
         
     }
     if (isValid) {
-        console.log("Form is valid!");
+        alert("Subscribed");
     } else {
         console.log("Form validation failed.");
     }
@@ -66,6 +66,10 @@ function validateForm2()
     const phoneNumber = userNum.value.trim();
     if (!validatePhoneNumber(phoneNumber)) {
         numSpan.innerHTML="Invalid Phone"
+    }
+    else
+    {
+        alert("Link Send")
     }
 }
 function bookNow()
