@@ -68,6 +68,11 @@ function validateForm2()
         numSpan.innerHTML="Invalid Phone"
     }
 }
+function bookNow()
+{
+    confirm("Confirm Booking by clicking ok")
+}
+//Burger menu for Mobile
 console.log(bookCar,mobIn)
 menu.addEventListener('click',function()
 {
