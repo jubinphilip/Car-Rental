@@ -384,6 +384,7 @@ align-items: center;
 {
     display: none;
 }
+
 /*Main Poster*/
 .poster {
     background-image: url(assets/2018-Mitsubishi-ASX-1920x966\ 1.svg);
@@ -443,10 +444,7 @@ color:  #FFFFFF;
     display: none;/*Hiding Poster for mobile at pc view*/
 }
 /*Popular cars Part*/
-input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-  }
+
 .popular-car
 {
     display: flex;
@@ -689,10 +687,7 @@ margin-top: 16.58px;
     flex-direction: column;
     background-color: #E21E26;
 }
-.mobile-sub-part2
-{
-    display: none;
-}
+
 .mobile-phone-img
 {
     width: 50%;
@@ -1079,6 +1074,7 @@ text-align: center;
     height: 25vh; 
     text-align: center;
     padding-top: 3vh;
+    background-color: #000000;
 }
 
 .footer-companies ul {
