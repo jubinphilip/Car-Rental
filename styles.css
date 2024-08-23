@@ -687,7 +687,10 @@ margin-top: 16.58px;
     flex-direction: column;
     background-color: #E21E26;
 }
-
+.mobile-sub-part2
+{
+    display: none;
+}
 .mobile-phone-img
 {
     width: 50%;
